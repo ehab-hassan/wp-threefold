@@ -221,31 +221,31 @@
     	<!-- END Custom icon section here -->
     	
 	</ul>
-	<ul>
-	   <li class="sfsi_premium_brdr_box">
-			<div class="sfsi_prem_icons_added">
-				<div class="sf_si_prmium_head"><h2>New: <span> In our Premium Plugin we added icons for:</span></h2></div>
-				<div class="sfsi_premium_row">
-					<div class = "sfsi_prem_cmn_rowlisting">
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/snapchat.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Snapchat</span>
-					</div>
-					
-					<div class = "sfsi_prem_cmn_rowlisting">
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/whatsapp.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">WhatsApp or Phone</span>
-					</div>
-						
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/yummly.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Yummly</span>
-					</div>
+    <ul>
+       <li class="sfsi_premium_brdr_box">
+            <div class="sfsi_prem_icons_added">
+                <div class="sf_si_prmium_head"><h2>New: <span> In our Premium Plugin we added icons for:</span></h2></div>
+                <div class="sfsi_premium_row">
+                    <div class = "sfsi_prem_cmn_rowlisting">
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/snapchat.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Snapchat</span>
+                    </div>
+                    
+                    <div class = "sfsi_prem_cmn_rowlisting">
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/whatsapp.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">WhatsApp or Phone</span>
+                    </div>
+                        
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/yummly.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Yummly</span>
+                    </div>
 
                     <div class = "sfsi_prem_cmn_rowlisting" >   
                         <span>
@@ -260,28 +260,28 @@
                         </span>
                         <span class="sfsicls_prem_text">Print</span>
                     </div>
-				</div>
-				<div class="sfsi_premium_row">
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/soundcloud.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Soundcloud</span>
-					</div>
-					
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/skype.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Skype</span>
-					</div>
-					
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/flickr.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Flickr</span>
-					</div>
+                </div>
+                <div class="sfsi_premium_row">
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/soundcloud.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Soundcloud</span>
+                    </div>
+                    
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/skype.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Skype</span>
+                    </div>
+                    
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/flickr.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Flickr</span>
+                    </div>
 
                     <div class = "sfsi_prem_cmn_rowlisting" >   
                         <span>
@@ -298,28 +298,28 @@
                     </div>
                     
                     
-				</div>
-				<div class="sfsi_premium_row">
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/reddit.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Reddit</span>
-					</div>
-					
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/vimeo.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Vimeo</span>
-					</div>
-					
-					<div class = "sfsi_prem_cmn_rowlisting" >	
-						<span>
-							<img src="<?php  echo SFSI_PLUGURL.'images/tumblr.png';?>" id="CImg" />
-						</span>
-						<span class="sfsicls_prem_text">Tumblr</span>
-					</div>
+                </div>
+                <div class="sfsi_premium_row">
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/reddit.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Reddit</span>
+                    </div>
+                    
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/vimeo.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Vimeo</span>
+                    </div>
+                    
+                    <div class = "sfsi_prem_cmn_rowlisting" >   
+                        <span>
+                            <img src="<?php  echo SFSI_PLUGURL.'images/tumblr.png';?>" id="CImg" />
+                        </span>
+                        <span class="sfsicls_prem_text">Tumblr</span>
+                    </div>
 
                    <div class = "sfsi_prem_cmn_rowlisting" >   
                         <span>
@@ -334,7 +334,7 @@
                         </span>
                         <span class="sfsicls_prem_text">Xing</span>
                     </div>
-				</div>
+                </div>
                 <div class="sfsi_premium_row">
                     <div class = "sfsi_prem_cmn_rowlisting" >   
                         <span>
@@ -380,13 +380,13 @@
                     </div>
                 </div>
 
-				<!--<div class="sfsi_need_another_one_link">
-					<p>Need another one?<a href="mailto:biz@ultimatelysocial.com"> Tell us</a></p>
-				</div>-->
-				<div class="sfsi_need_another_tell_us">
+                <!--<div class="sfsi_need_another_one_link">
+                    <p>Need another one?<a href="mailto:biz@ultimatelysocial.com"> Tell us</a></p>
+                </div>-->
+                <div class="sfsi_need_another_tell_us">
                     <a href="https://www.ultimatelysocial.com/all-platforms/" target="_blank">...and many more! See them here</a>                                  
-					<!--<a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=more_platforms&utm_medium=banner" target="_blank">See all features Premium Plugin</a>-->
-				</div>
+                    <!--<a href="https://www.ultimatelysocial.com/usm-premium/?utm_source=usmi_settings_page&utm_campaign=more_platforms&utm_medium=banner" target="_blank">See all features Premium Plugin</a>-->
+                </div>
             </div>
         </li>
     </ul>

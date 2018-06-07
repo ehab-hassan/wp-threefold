@@ -285,7 +285,7 @@ I want to see how it works</a></div>
     <div class="pop_up_box sfsi_pop_up " >
        <h4 class="activate">Ok, fine, however for using this plugin for FREE, please support us by activating a link back to our site:</h4>
        <?php $nonce = wp_create_nonce("active_footer");?>
-	<div class="button"><a href="javascript:;" class="activate_footer activate" title="Ok, activate link" data-nonce="<?php echo $nonce;?>">Ok, activate link</a></div>
+  <div class="button"><a href="javascript:;" class="activate_footer activate" title="Ok, activate link" data-nonce="<?php echo $nonce;?>">Ok, activate link</a></div>
 <a href="javascript:;" id="deac_email3" title="Don’t activate link">Don’t activate link</a>
   </div>
 </div>
@@ -293,7 +293,7 @@ I want to see how it works</a></div>
 <div class="pop-overlay read-overlay demail-3" >
     <div class="pop_up_box sfsi_pop_up " >
        <h4>You’re a toughie. Last try: As a minimum, could you please review this plugin (with 5 stars)? It only takes a minute. Thank you! </h4>
-	<div class="button"><a href="https://wordpress.org/support/plugin/ultimate-social-media-icons/reviews/" target="_new" class="hidePop activate" title="Ok, Review it" >Ok, Review it</a></div>
+  <div class="button"><a href="https://wordpress.org/support/plugin/ultimate-social-media-icons/reviews/" target="_new" class="hidePop activate" title="Ok, Review it" >Ok, Review it</a></div>
         <a href="javascript:;" class="hidePop" title="Don’t review and exit">Don’t review and exit</a>
   </div>
 </div> <!-- END email deactivate pop-ups -->
