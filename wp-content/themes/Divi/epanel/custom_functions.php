@@ -198,9 +198,7 @@ if ( ! function_exists( 'et_get_option' ) ) {
 		if ( $is_global_setting ) {
 			$option_value = '';
 
-			if ( ! $et_global_setting = get_site_option( $global_setting_main_name ) ) {
-				$et_global_setting = get_option( $global_setting_main_name );
-			}
+			$et_global_setting = get_option( $global_setting_main_name );
 
 			if ( false !== $et_global_setting && isset( $et_global_setting[ $global_setting_sub_name ] ) ) {
 				$option_value = $et_global_setting[ $global_setting_sub_name ];
@@ -241,13 +239,11 @@ if ( ! function_exists( 'et_update_option' ) ) {
 		global $et_theme_options, $shortname;
 
 		if ( $is_new_global_setting && '' !== $global_setting_main_name && '' !== $global_setting_sub_name ) {
-			if ( ! $global_setting = get_site_option( $global_setting_main_name ) ) {
-				$global_setting = get_option( $global_setting_main_name, array() );
-			}
+			$global_setting = get_option( $global_setting_main_name, array() );
 
 			$global_setting[ $global_setting_sub_name ] = $new_value;
 
-			update_site_option( $global_setting_main_name, $global_setting );
+			update_option( $global_setting_main_name, $global_setting );
 
 		} else if ( et_options_stored_in_one_row() ) {
 			$et_theme_options_name = 'et_' . $shortname;
@@ -1574,12 +1570,42 @@ add_action( 'wp_head', 'et_add_custom_css', 100 );
 
 if ( ! function_exists( 'et_get_google_fonts' ) ) :
 
-	/**
- * Returns the list of popular google fonts
- *
- */
+ /**
+  * Returns the list of popular google fonts
+  * Fallback to websafe fonts if disabled
+  */
+
 	function et_get_google_fonts() {
-		$google_fonts = array(
+		$websafe_fonts = array(
+			'Georgia' => array(
+				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'character_set' => 'cyrillic,greek,latin',
+				'type'			=> 'serif',
+			),
+			'Times New Roman' => array(
+				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'character_set' => 'arabic,cyrillic,greek,hebrew,latin',
+				'type'			=> 'serif',
+			),
+			'Arial' => array(
+				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'character_set' => 'arabic,cyrillic,greek,hebrew,latin',
+				'type'			=> 'sans-serif',
+			),
+			'Trebuchet' => array(
+				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'character_set' => 'cyrillic,latin',
+				'type'			=> 'sans-serif',
+				'add_ms_version'=> true,
+			),
+			'Verdana' => array(
+				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'character_set' => 'cyrillic,latin',
+				'type'			=> 'sans-serif',
+			),
+		);
+
+		$google_fonts = et_core_use_google_fonts() ? array(
 			'Open Sans'             => array(
 				'styles' 		=> '300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
 				'character_set' => 'latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic',
@@ -1980,7 +2006,7 @@ if ( ! function_exists( 'et_get_google_fonts' ) ) :
 				'character_set' => 'latin',
 				'type'			=> 'cursive',
 			),
-		);
+		) : $websafe_fonts;
 
 		return apply_filters( 'et_google_fonts', $google_fonts );
 	}
@@ -2040,7 +2066,9 @@ if ( ! function_exists( 'et_gf_enqueue_fonts' ) ) :
 	function et_gf_enqueue_fonts( $et_gf_font_names ) {
 		global $shortname;
 
-		if ( ! is_array( $et_gf_font_names ) || empty( $et_gf_font_names ) ) return;
+		if ( ! is_array( $et_gf_font_names ) || empty( $et_gf_font_names ) || ! et_core_use_google_fonts() ) {
+			return;
+		}
 
 		$google_fonts = et_get_google_fonts();
 		$protocol = is_ssl() ? 'https' : 'http';
