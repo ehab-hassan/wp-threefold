@@ -1,0 +1,194 @@
+/*Heade.divi_insured_customers .et_pb_blurb, .divi_insured_customers .et_pb_main_blurb_image img, .divi_insured_business_caring .et_pb_blurb .et_pb_blurb_container, .divi_insured_business_caring .et_pb_blurb .et_pb_main_blurb_image:before, .divi_insured_business_caring .et_pb_blurb, .divi_insured_helping .et-pb-iconr*/
+.divi_insured_header .et_pb_button_wrapper {
+    line-height: 15px !important;
+}
+
+/*Helping Section*/
+.divi_insured_helping .et-pb-icon {
+    padding: 18px !important;
+
+}
+
+/*Business of Caring*/
+.divi_insured_business_caring .et_pb_blurb {
+    position: relative;
+}
+
+.divi_insured_business_caring .et_pb_blurb .et_pb_main_blurb_image {
+    margin-bottom: 0 !important;
+}
+
+.divi_insured_business_caring .et_pb_blurb .et_pb_main_blurb_image img {
+    display: block !important;
+    width: 100%;
+}
+
+.divi_insured_business_caring .et_pb_blurb .et_pb_blurb_container h4 {
+    padding-bottom: 0 !important;
+}
+
+.divi_insured_business_caring .et_pb_blurb .et_pb_blurb_container {
+    margin: 0;
+    position: absolute;
+    top: 2vw;
+    left: 1.6vw;
+
+}
+
+/*Columns*/
+
+#page-container .divi_insured_business_caring .et_pb_column_1_4:last-child {
+    margin-right: 0 !important;
+}
+
+#page-container .divi_insured_business_caring .et_pb_column_1_4 {
+    width: 23.8% !important;
+    margin-right: 1.6% !important;
+}
+
+/*Services*/
+
+.divi_insured_services .et_pb_blurb .et_pb_blurb_container {
+    margin: 0 !important;
+}
+
+.divi_insured_services .et_pb_column_1_2 {
+    margin-right: 5% !important;
+}
+
+/*Bottom Section*/
+.divi_insured_customers .et_pb_main_blurb_image {
+    margin-bottom: 39px !important;
+}
+
+.divi_insured_customers .et_pb_main_blurb_image img {
+    width: 100% !important;
+    display: block !important;
+}
+
+.divi_insured_customers .et_pb_blurb_container {
+    margin: 0 3.6vw 0 1.6vw;
+}
+
+/*Hovers*/
+
+.divi_insured_customers .et_pb_blurb,
+.divi_insured_customers .et_pb_main_blurb_image img,
+.divi_insured_business_caring .et_pb_blurb .et_pb_blurb_container,
+.divi_insured_business_caring .et_pb_blurb .et_pb_main_blurb_image,
+.divi_insured_business_caring .et_pb_blurb,
+.divi_insured_helping .et-pb-icon {
+    transition: 0.3s !important;
+}
+
+.divi_insured_customers .et_pb_blurb .et_pb_main_blurb_image {
+    overflow: hidden;
+}
+
+.divi_insured_customers .et_pb_blurb:hover .et_pb_main_blurb_image img {
+    transform: scale(1.1);
+}
+
+
+
+.divi_insured_business_caring .et_pb_blurb:hover .et_pb_main_blurb_image {
+    opacity: 0.5;
+}
+
+.divi_insured_helping .et-pb-icon:hover {
+    transform: scale(1.1);
+}
+
+.divi_insured_business_caring .et_pb_blurb:hover .et_pb_blurb_container {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 980px) {
+    .divi_insured_header .et_pb_promo .et_pb_promo_description h2 {
+        margin-bottom: 0 !important;
+    }
+
+    .divi_insured_helping .et_pb_promo h2 {
+        margin-bottom: 0 !important;
+    }
+
+    .divi_insured_helping .et_pb_promo {
+        max-width: 100%;
+        text-align: center !important;
+    }
+
+    .divi_insured_helping .et_pb_promo .et_pb_button.et_pb_promo_button {
+        margin-top: 0 !important;
+    }
+
+    .divi_insured_helping .et_pb_column_1_2:first-child {
+        margin-bottom: 40px !important;
+    }
+
+    #page-container .divi_insured_business_caring .et_pb_column_1_4:nth-child(2n +2) {
+        margin-right: 0 !important;
+    }
+
+    #page-container .divi_insured_business_caring .et_pb_column_1_4 {
+        width: 48% !important;
+        margin-right: 4% !important;
+    }
+
+    .divi_insured_services .et_pb_promo{
+        text-align: center !important;
+    }
+
+    .divi_insured_services .et_pb_column_1_2 {
+        margin-right: 0 !important;
+    }
+
+    .divi_insured_services .et_pb_promo .et_pb_promo_description h2 {
+        margin-bottom: 10px !important;
+        max-width: 100% !important;
+    }
+
+    .divi_insured_services .et_pb_promo .et_pb_button.et_pb_promo_button{
+        margin-top: 0 !important;
+    }
+
+    .divi_insured_customers .et_pb_blurb:last-child{
+        margin-right: 0 !important;
+    }
+    .divi_insured_customers .et_pb_column_1_3 {
+        width: 32% !important;
+        margin-right: 2% !important;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .divi_insured_customers .et_pb_column_1_3 .et_pb_blurb_content{
+        max-width: 100% !important;
+    }
+    .divi_insured_customers .et_pb_column_1_3 {
+        width: 100% !important;
+        margin-right: 0 !important;
+        float: none;
+    }
+
+    .divi_insured_customers .et_pb_blurb_container {
+        margin: 0 40px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .divi_insured_business_caring .et_pb_blurb .et_pb_blurb_container {
+        margin: 0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .divi_insured_services .et_pb_blurb .et_pb_main_blurb_image,
+    .divi_insured_services .et_pb_blurb{
+        text-align: center !important;
+    }
+}
