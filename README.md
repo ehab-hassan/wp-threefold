@@ -1,1 +1,1 @@
-# wp-threefold
+# ThreeFoldToken
